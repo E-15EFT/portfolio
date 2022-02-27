@@ -1,0 +1,64 @@
+
+{% extends 'core/base.html' %}
+{% block Title %} about {% endblock Title %}
+{% block content2 %}
+<style>
+    .about{
+    position;relative;
+    width:100%;
+    display:flex;
+    justify-contant:center;
+    align-items:center;
+    flex-wrap:wrap;
+
+    }
+    .text{
+    color:#111;
+    font-family:cambria;
+    font-size:10px;
+    letter-spacing:2px;
+    }p bold,span{
+    color:red;
+    font-size:30px;
+    }
+img{
+width:300px;
+height:300px;
+border-radius:25px;
+box-shadow:10px 10px 8px #888888;
+}
+
+
+     @media(max-width:900px){
+     .about{ flex-direction:column;
+   }
+     }
+     @media(max-width:1153px){
+     .about{ flex-direction:column;
+   }
+     }
+
+</style>
+  <h1 class="text-center"><span>About</span></h1>
+<section class="about " id="about">
+
+    <div class="img-box m-4">
+        {% load static %}
+  <img src= " {%  static 'core/images/derick-mckinney-243Q39DzM3M-unsplash.jpg'  %} " class="img-fluid "> </div>
+
+<div class="text m-2">
+      <p class="lead"> <bold>HI !</bold> i am Prasenjit <br>  i'm as <span>E</span>lectrical<span>E</span>ngineering , <br>
+             and <u> Fontend and Backend Develope</u>r in IT field, <br> Industrial Experience 2 year in <span> q</span>uelity <span> a</span>ssurance<span> E</span>ngineer.
+            </p>
+
+     <h5>Name <samp>- Prasenjit sahis</samp></h5>
+                     <h5>Age - <samp>22</samp></h5>
+                    <h5>Address - <samp>Bengaluru</samp></h5>
+                     <h5>Phone - <samp>7365**7989</samp></h5>
+                     <h5>E-mail - <samp>prasenjitsahis233@gmail.com </samp></h5>
+
+   <button type="button" class="btn btn-outline-info mt-4">DOWNLOAD CV</button>
+   </div>
+</section>
+
+{% endblock content2 %}

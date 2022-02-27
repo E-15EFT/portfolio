@@ -1,0 +1,33 @@
+ span{
+color:blue;
+}.ab{ height:200px;
+background-color:rgba(43,42,43);
+
+}.cool{
+position:relative;
+}
+ img{
+width:700px;
+height:700px;
+border-radius:25px;
+box-shadow:5px 5px 8px #333131;
+}.all{
+position:relative;
+width:100%;
+display:flex;
+justify-contant:center;
+}.txt{
+position:relative;
+width:100%
+display:flex;
+justify-content:center;
+top:300px;
+
+}strong {
+font-size:7rem;
+text-align:center;
+}
+samp{
+color:green;
+}
+

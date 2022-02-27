@@ -1,0 +1,20 @@
+{% extends 'core/base.html' %}
+
+{% block Title %} home {% endblock Title %}
+{% block content1 %}
+<div class="text-center" >
+<div class="cool">
+<div class="ab">
+    {% load static %}
+    <img src= " {%  static 'core/images/profile-4.jpg' %} " class="img-fluid rounded-circle mt-3" >
+
+</div></div>
+    <div class="txt">
+        <h3> <strong style="color:green "> HELLO !</strong> my name is </h3>
+ <h1 style="color:red; ">
+      Prasenjit Sahis
+ </h1>
+<h2> <span>I</span>'m full stack developer</h2>
+       <button type="button" class="btn btn-outline-primary mt-4">Hire me</button>
+</div></div>
+{% endblock content1 %}

@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+  {% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> {% block Title %} {% endblock Title %} </title>
+
+    <link rel="stylesheet" href="{% static 'core/css/bootstrap.css' %}">
+    <link rel="stylesheet"  href="{% static 'core/css/core.css' %}">
+</head>
+<header>
+    <nav id="nav1 w-100">
+<ul class="nav justify-content-center  bg-danger">
+  <li class="nav-item">
+    <a class="nav-link  bg-outline" aria-current="page" href="/home/">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link active bg-outline" href="/about/">About</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link bg-outline" href="/soo/skill">skills</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link bg-outline color-info"  href="/contact/">contact me</a>
+  </li>
+</ul>
+</nav>
+
+</header>
+<body>
+{% block content1 %} {% endblock content1 %}
+{% block content2 %} {% endblock content2 %}
+{% block content3 %} {% endblock content3 %}
+{% block content4 %} {% endblock content4 %}
+
+
+
+<script src="{% static 'core/js/bootstrap.js' %}"></script>
+<script src="{% static 'core/js/popper.js' %}"></script>
+<script src="{% static 'core/js/jquery.js' %}"></script>
+</body>
+</html>
